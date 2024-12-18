@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Valorant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="fonts.css" />
+    <script src="theme.js" defer></script>
+    <script src="agents.js" defer></script>
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <div class="flex flex-col lg:ml-24 lg:flex-row lg:h-screen relative">
+      <img 
+      src="assets/Valorant_logo.svg.png" 
+      alt="logo valorant" 
+      id="letras" 
+      class="hidden md:block md:-z-20 md:absolute md:inset-0 md:object-cover md:mt-[580px] lg:mt-0 lg:h-[40%] lg:w-[80%] lg:object-cover lg:rotate-90"
+    />  
+      <div
+        class="flex-1 flex flex-col md:w-full lg:flex-row lg:items-center lg:justify-between p-4 lg:pr-0 relative"
+      >
+        <!-- Contenedor del texto -->
+        <div class="bg-black bg-opacity-50 rounded-lg w-[60%]  md:w-[40%] md:bg-opacity-60 lg:bg-transparent  lg:w-1/2 flex flex-col justify-center lg:z-20 relative">
+          <h1 id="agent-name" class="p-2 text-4xl font-bold lg:p-0 lg:text-7xl text-[#FF4654]"></h1>
+          <p id="agent-description" class="w-[70%] font-semibold mt-4 text-left lg:w-[50%]"></p>
+          <div id="agent-abilities" class=" p-2 flex space-x-4 mt-6 lg:bg-black lg:bg-opacity-50 lg:w-[60%] lg:h-[30%] lg:rounded-lg"></div>
+        </div>
+        <!-- Imagen del agente -->
+        <div class="absolute inset-0 -z-10 w-[200px] md:w-[100%] lg:w-[80%] lg:ml-40">
+          <img
+            id="agent-portrait"
+            src=""
+            alt="Agent Portrait"
+            class="w-full h-full object-cover md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px] ml-36"
+          />
+        </div>
+      </div>
+
+      <!-- Contenedor del scroll (MÓVIL y TABLET) -->
+      <div
+        id="agents-scroll"
+        class="flex z-20  md:fixed md:bottom-0 md:mb-14 lg:mb-0 lg:relative lg:flex-col lg:overflow-y-auto lg:z-20 lg:h-screen lg:grid lg:grid-cols-4 lg:gap-4 overflow-x-auto space-x-2 md:space-x-0 p-4 lg:p-6 relative"
+      ></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<header class=" text-gray-900 lg:fixed z-30">
+  <div class="container mx-auto flex flex-col lg:flex-row lg:h-screen">
+    <!-- Sidebar para escritorio -->
+    <div id="bg-header" class="hidden lg:flex flex-col items-center justify-between py-8 bg-white w-20 lg:w-24">
+      <!-- Logo -->
+      <a href="index.html" class="mb-8">
+        <img src="assets/logo-blanco.png" alt="Logo Light" id="logo" class="h-12" />
+      </a>
+      <div class="flex flex-col items-center justify-center space-y-8">
+        <!-- Botón para cambiar el tema -->
+        <button id="theme-toggle" class="focus:outline-none">
+          <img src="assets/sol-blanco.png" alt="Light Theme" class="h-6 w-6" />
+        </button>
+        <!-- Navegación con íconos -->
+        <nav class="flex flex-col items-center space-y-6">
+          <a href="index.html" class="hover:opacity-75">
+            <img src="assets/casa-blanco.png" alt="Home Light" id="home" class="h-8 w-8" />
+          </a>
+          <a href="agents.html" class="hover:opacity-75">
+            <img src="assets/agente-blanco.png" alt="Agents Light" id="agents" class="h-8 w-8" />
+          </a>
+          <a href="maps.html" class="hover:opacity-75">
+            <img src="assets/mapa-blanco.png" alt="Maps Light" id="maps" class="h-8 w-8" />
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Barra superior para móviles -->
+    <div class="flex z-30 lg:hidden justify-between items-center px-4 py-4">
+      <!-- Logo para móviles -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/logo-negro.png" alt="Logo Light" id="logo-mobile" class="h-10 md:h-14" />
+      </a>
+      <!-- Sección derecha: Botón de tema y menú -->
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle-mobile" class="focus:outline-none">
+          <img src="assets/sol-negro.png" alt="Light Theme" class="h-6 w-6 md:h-12 md:w-12" />
+        </button>
+        <button id="menu-btn" class="focus:outline-none">
+          <img src="assets/menu-oscuro.png" alt="Menu Hamburguesa" id="menu" class="h-6 w-6 md:h-12 md:w-12">
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <nav id="mobile-menu" class="hidden lg:hidden px-4 py-4 space-y-2 bg-white">
+      <a href="index.html" class="block py-2 hover:text-red-500">Home</a>
+      <a href="agents.html" class="block py-2 hover:text-red-500">Agentes</a>
+      <a href="maps.html" class="block py-2 hover:text-red-500">Mapas</a>
+    </nav>
+  </div>
+</header>

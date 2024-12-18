@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Valorant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="fonts.css">
+    <script src="theme.js" defer></script>
+  </head>
+  <body class="bg-white text-gray-900 dark:text-gray-100">
+    <div class="container mx-auto">
+      <div id="header-container"></div>
+
+      <section class="relative lg:h-screen lg:w-full flex items-center justify-center lg:justify-start">
+        <div class=" w-[80%] inset-0 flex justify-center items-center p-0 lg:hidden">
+          <img src="assets/letras-negro.png" alt="Valorant Logo Light" id="hero-mobile" class="w-[80%] h-[40%] object-contain" />
+        </div>
+        <div class="hidden lg:flex lg:items-center lg:justify-center w-full h-full relative">
+          <img src="assets/JETT.png" alt="Agente Background" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+          <div>
+            <p id="explore" class="relative text-3xl text-center tracking-widest h-auto z-10 text-black">EXPLORE</p>
+            <img src="assets/pc-valo.png" alt="Valorant Logo" class="relative w-[80%] lg:w-[1200px] h-auto z-10 mb-44 ml-6" />
+          </div>
+          <img src="assets/JETT.png" alt="Agente" class="absolute w-[70%] h-auto bottom-0 right-8 opacity-100 z-20" />
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden py-10 lg:py-0 text-black">
+        <img src="assets/fondo-negro.png" id="bg-section2" class="absolute inset-0 z-0 bg-center opacity-20 lg:ml-16" />
+        <div class="relative container mx-auto flex flex-col lg:flex-row items-center px-6">
+          <div class="w-full flex justify-center mb-3 lg:mb-0">
+            <img src="assets/raze.png" alt="Agente Light" id="agent-img" class="w-full max-w-[500px] lg:max-w-[1200px] lg:mb-44" />
+          </div>
+          <div class="w-full lg:flex-[0.3]  flex flex-col justify-center items-center text-center z-20">
+            <h2 id="fonts" class="text-4xl md:text-6xl lg:text-9xl  text-[#FF4654] uppercase mb-4 leading-tight tracking-tight lg:z-30 lg:mr-20">
+              Conoce a <br /> nuestros agentes
+            </h2>
+            <button class="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 lg:mr-20 lg:text-xl bg-[#FF4654] text-white rounded-full hover:bg-red-700 transition duration-300">Ver</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative min-h-[50vh] lg:h-[80vh] overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-[url('assets/splash.png')] bg-cover bg-center opacity-30"></div>
+        <div id="box-shadow" class="absolute inset-0" style="box-shadow: inset 0px 49px 81px 28px rgba(255, 255, 255, 0.8);"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+          <h2 id="fonts" class="text-4xl md:text-6xl lg:text-9xl font-bold text-[#FF4654] uppercase leading-tight mb-6">
+            Conoce nuestros <br /> mapas
+          </h2>
+          <button class="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 lg:text-xl bg-[#FF4654] text-white rounded-full hover:bg-red-700 transition duration-300">Ver</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
